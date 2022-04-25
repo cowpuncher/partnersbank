@@ -319,6 +319,12 @@ select:-webkit-autofill:focus {
     font-size: 16px;
 }
 
+.navigation a.active,
+.navigation a:hover {
+    text-decoration: underline;
+    opacity: .6;
+}
+
 .navigation li:not(:last-child) {
     margin-right: 33px;
 }
@@ -328,7 +334,7 @@ select:-webkit-autofill:focus {
 }
 
 .mainOfferWrap {
-    padding: 95px 0;
+    padding: 95px 0 140px;
 }
 
 .mainOffer .title span {
@@ -362,4 +368,9 @@ select:-webkit-autofill:focus {
 
 .buttons .btn {
     margin-right: 5px;
+}
+
+.mainOfferWrap .img {
+    bottom: 0;
+    right: 2.5%;
 }
