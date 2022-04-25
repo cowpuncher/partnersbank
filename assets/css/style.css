@@ -1,0 +1,365 @@
+@import url(../fonts/monserrat/stylesheet.css);
+
+/* ANCHOR Variables */
+
+:root {
+
+    --ff-m: 'Montserrat', sans-serif;
+
+    --color-1: #333333;
+    --color-2: #ffffff;
+    --color-3: #FFF5F2;
+    --color-4: #27087B;
+    --color-5: #F5481F;
+    --color-6: #ECF2FB;
+
+    --fs-1: 17px;
+    --fs-2: 20px;
+    --fs-3: 30px;
+    --fs-4: 46px;
+    --fs-5: 60px;
+
+    --box-shadow-1: 0px 4px 16px rgba(9, 60, 102, 0.1);
+    
+    --border-radius-1: 12px;
+
+    --letter-spacing-1: 0.05em;
+
+    --lh-1: 24px;
+
+}
+
+/* ANCHOR Specification */
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--ff-m);
+    font-size: var(--fs-1);
+    color: var(--color-1);
+}
+
+address {
+    font-style: normal;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-1);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--ff-p);
+    font-weight: 700;
+}
+
+h1 {
+    font-size: var(--fs-5);
+}
+
+h2 {
+    font-size: var(--fs-4);
+}
+
+h3 {
+    font-size: var(--fs-3);
+}
+
+h4 {
+    font-size: var(--fs-2);
+}
+
+h5 {
+    font-size: var(--fs-1);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px #ffffff inset !important;
+} 
+
+/*ANCHOR Flexbox элементы и контейнер */
+
+.dFlex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.aic {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.aifs {
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -moz-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+.aife {
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+       -moz-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+}
+.ais {
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+       -moz-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+}
+.jcsb {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+       -moz-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.jcsa {
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+}
+.jcc {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+.fdc {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+.fdr {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+       -moz-box-orient: horizontal;
+       -moz-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+}
+.fww {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+}
+
+
+/* ANCHOR -- ELEMENTS STYLE */
+/* ANCHOR ---- (repeat elements)  */
+
+.container {
+    max-width: 1310px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.tac {
+    text-align: center;
+}
+
+.mAuto {
+    margin: 0 auto;
+}
+
+.pos-r {
+    position: relative;
+}
+
+.pos-a {
+    position: absolute;
+}
+
+.mobileElement {
+    display: none;
+}
+
+.btn {
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 12px 18px;
+    border: 0;
+    border: 2px solid transparent;
+    background: transparent;
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -moz-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-border-radius: var(--border-radius-1);
+       -moz-border-radius: var(--border-radius-1);
+            border-radius: var(--border-radius-1);
+}
+
+.btnLight {
+    border: 2px solid var(--color-5);
+}
+
+
+.btnPoor {
+    color: var(--color-2);
+}
+
+.bgWarm {
+    background: var(--color-3);
+}
+
+.bgCold {
+    background: var(--color-6);
+}
+
+
+.bgOrange {
+    background: var(--color-5);
+}
+
+.btn.bgOrange {
+    padding: 16px 40px
+}
+
+.btn.bgOrange:hover {
+    background: transparent;
+    color: var(--color-1);
+    border: 2px solid var(--color-5);
+}
+
+.link {
+    font-weight: 700;
+    font-size: 16px;
+    padding: 18px 40px;
+    -webkit-border-radius: var(--border-radius-1);
+       -moz-border-radius: var(--border-radius-1);
+            border-radius: var(--border-radius-1);
+}
+
+.link:hover,
+.btnLight:hover {
+    background: var(--color-5);
+    color: var(--color-2);
+    border-color: transparent;
+}
+
+.bgPurple {
+    background: var(--color-4);
+}
+
+.btn.bgPurple:hover {
+    background: var(--color-4);
+    color: var(--color-2);
+    border-color: transparent;
+}
+
+.bgGradient {
+    color: #ffffff;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.15%, rgba(48, 9, 152, 0.8)), to(#27087B));
+    background: -webkit-linear-gradient(top, rgba(48, 9, 152, 0.8) 0.15%, #27087B 100%);
+    background: -moz-linear-gradient(top, rgba(48, 9, 152, 0.8) 0.15%, #27087B 100%);
+    background: -o-linear-gradient(top, rgba(48, 9, 152, 0.8) 0.15%, #27087B 100%);
+    background: linear-gradient(180deg, rgba(48, 9, 152, 0.8) 0.15%, #27087B 100%);
+}
+
+/* ANCHOR -- HEADER */
+
+.topPanel {
+    padding: 20px 0;
+}
+
+.navigation a {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.navigation li:not(:last-child) {
+    margin-right: 33px;
+}
+
+.mainOffer {
+    max-width: 755px;
+}
+
+.mainOfferWrap {
+    padding: 95px 0;
+}
+
+.mainOffer .title span {
+    color: var(--color-2);
+    padding: 12px 16px;
+    background: var(--color-4);
+}
+
+.mainOffer .title span:first-child {
+    -webkit-border-radius: 12px 12px 0 0;
+       -moz-border-radius: 12px 12px 0 0;
+            border-radius: 12px 12px 0 0;
+}
+
+.mainOffer .title span:last-child {
+    -webkit-border-radius: 0 0 12px 12px;
+       -moz-border-radius: 0 0 12px 12px;
+            border-radius: 0 0 12px 12px;
+}
+
+.mainOffer .desc {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 30px 0 0;
+
+}
+
+.mainOffer .buttons {
+    margin-top: 40px;
+}
+
+.buttons .btn {
+    margin-right: 5px;
+}
