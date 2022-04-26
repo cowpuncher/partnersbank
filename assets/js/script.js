@@ -4,11 +4,15 @@ if(faqItem) {
     for (let i = 0; i < faqItem.length; i++) {
         const elm = faqItem[i];
         elm.addEventListener('click', e => {
-            let curTarget = e.currentTarget;
-            for (let i = 0; i < faqItem.length; i++) {
-                faqItem[i].classList.remove('active');
+            let curTarget = e.currentTarget;            
+            if (!curTarget.classList.contains('active')) {
+                for (let i = 0; i < faqItem.length; i++) {
+                    faqItem[i].classList.remove('active');
+                }
+                curTarget.classList.add('active');
+            } else {
+                curTarget.classList.remove('active');
             }
-            curTarget.classList.add('active');
         })
     }
 }

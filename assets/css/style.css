@@ -944,7 +944,6 @@ a.footerMenuLink:hover {
 .faqItem {
     overflow: hidden;
     position: relative;
-    height: 104px;
     padding: 0 150px 0 40px;
     cursor: pointer;
     display: -webkit-box;
@@ -964,6 +963,13 @@ a.footerMenuLink:hover {
        -moz-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -webkit-transition: all .3 ease;
+    -o-transition: all .3 ease;
+    -moz-transition: all .3 ease;
+    transition: all .3 ease;
     border: 1px solid rgba(51, 51, 51, 0.2);
     -webkit-border-radius: var(--border-radius-1);
        -moz-border-radius: var(--border-radius-1);
@@ -971,10 +977,31 @@ a.footerMenuLink:hover {
     
 }
 
+.faqItem .title {
+    height: 104px;
+    position: relative;
+    z-index: 1;
+    background: var(--color-2);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
 .faqItem::after {
     position: absolute;
     top: 25px;
     right: 38px;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    transition: all .5s ease;
     content: url(../img/svg/faqArrow.svg);
     display: -webkit-box;
     display: -webkit-flex;
@@ -1001,11 +1028,11 @@ a.footerMenuLink:hover {
  
 .faqItem.active {
     height: 100%;
-    -webkit-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    transition: all .3s ease;
-    padding: 40px 150px 22px 40px;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    transition: all .5s ease;
+    padding: 0 150px 22px 40px;
 }
 
 .faqItem.active::after {
@@ -1014,10 +1041,10 @@ a.footerMenuLink:hover {
         -ms-transform: rotate(180deg);
          -o-transform: rotate(180deg);
             transform: rotate(180deg);
-    -webkit-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    transition: all .3s ease;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    transition: all .5s ease;
 }
 
 .faqItem:not(:last-child) {
@@ -1031,13 +1058,17 @@ a.footerMenuLink:hover {
 .faqItem .desc {
     visibility: hidden;
     height: 0;
+    -webkit-transform: translate(0 , -100%);
+       -moz-transform: translate(0 , -100%);
+        -ms-transform: translate(0 , -100%);
+         -o-transform: translate(0 , -100%);
+            transform: translate(0 , -100%);
     font-size: 17px;
     line-height: var(--lh-1);
-    -webkit-transform: translate(0, -100%);
-       -moz-transform: translate(0, -100%);
-        -ms-transform: translate(0, -100%);
-         -o-transform: translate(0, -100%);
-            transform: translate(0, -100%);
+    -webkit-transition: all .1s ease;
+    -o-transition: all .1s ease;
+    -moz-transition: all .1s ease;
+    transition: all .1s ease;
 }
 
 .faqItem .desc p:not(:last-child) {
@@ -1045,18 +1076,17 @@ a.footerMenuLink:hover {
 }
 
 .faqItem.active .desc {
-    visibility: visible;
-    height: 100%;
-    -webkit-transform: translate(0, 0);
-       -moz-transform: translate(0, 0);
-        -ms-transform: translate(0, 0);
-         -o-transform: translate(0, 0);
-            transform: translate(0, 0);
-    margin-top: 20px;
-    -webkit-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    transition: all .3s ease;
+    visibility: visible;   
+    height: 100%; 
+    -webkit-transform: translate(0 , 0);    
+       -moz-transform: translate(0 , 0);    
+        -ms-transform: translate(0 , 0);    
+         -o-transform: translate(0 , 0);    
+            transform: translate(0 , 0);
+            -webkit-transition: all .5s ease;
+            -o-transition: all .5s ease;
+            -moz-transition: all .5s ease;
+            transition: all .5s ease;
 }
 
 /* ANCHOR ---- (review section)  */
