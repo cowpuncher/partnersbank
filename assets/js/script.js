@@ -42,3 +42,37 @@ fixedMenu();
 window.addEventListener('scroll', function() {
     fixedMenu();
 });
+
+
+// ANCHOR --- Pop-ups
+let popup = document.querySelectorAll('.popup');
+let popupClose = document.querySelectorAll('.popupClose');
+let popupOverlay = document.querySelectorAll('.popupOverlay');
+
+if (popup) {
+    const closePopup = (el, timer = 0) => {
+        setTimeout(() => {
+            for(elem of el) {
+                elem.addEventListener('click', e => {
+                    e.currentTarget.parentNode.classList.remove('active');
+                })
+            }
+            
+        }, timer);
+    }
+    closePopup(popupOverlay);
+    closePopup(popupClose);
+    
+    const activePopup = (btn, modal) => {
+        btnCollection =  document.querySelectorAll(btn);
+        for(popupBtn of btnCollection) {
+            popupBtn.addEventListener('click', e => {
+                e.preventDefault();
+                for(var i = 0; i < popup.length; i++) {
+                    popup[i].id === modal ? popup[i].classList.add('active') : '';
+                }
+            })
+        }
+    }
+    activePopup('.popupBtnOrder', 'popupOrder');
+}

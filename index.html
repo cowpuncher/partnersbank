@@ -47,7 +47,7 @@
                                 </li>
                             </ul>
                         </nav>
-                        <a href="#" class="btn btnLight">
+                        <a href="#" class="btn btnLight popupBtnOrder">
                             Зарегистрировать бизнес
                         </a>
                         <button class="burger mobileElement">
@@ -753,6 +753,74 @@
                 </div>
             </div>
         </footer>
+
+        <div class="popup" id="popupOrder">            
+            <button class="popupClose">
+                <img src="./assets/img/svg/close.svg" alt="">
+            </button>
+            <div class="popupOverlay"></div>
+            <div class="popupWindow">
+                <div class="popupBody">
+                    <form class="form dFlex fdc aifs">
+                        <h2 class="title">
+                            Заявка на открытие бизнеса
+                        </h2>
+                        <label>
+                            Фамилия
+                            <input name="surname" type="text">
+                        </label>
+                        <label>
+                            Имя
+                            <input name="name" type="text">
+                        </label>
+                        <label>
+                            Отчество
+                            <input name="surname" type="text">
+                        </label>
+                        <label>
+                            Контактный телефон
+                            <div class="phoneWrap dFlex aic">
+                                <select name="" id="">
+                                    <option value="+7">
+                                        <img src="./assets/img/svg/flag.svg" alt="flag">
+                                        +7
+                                    </option>
+                                    <option value="+2">
+                                        <img src="./assets/img/svg/flag.svg" alt="flag">
+                                        +2
+                                    </option>
+                                </select>
+                                <input name="phone" type="tel">
+                            </div>
+                        </label>
+                        <label>
+                            Какую фирму хотите открыть?
+                            <select name="" id="">
+                                <option value="">
+                                    Выберите
+                                </option>
+                                <option value="">
+                                    ИП
+                                </option>
+                                <option value="">
+                                    ООО
+                                </option>
+                            </select>
+                        </label>
+                        <label>
+                            Email
+                            <input name="email" type="email">
+                        </label>
+                        <p class="policy">
+                            Нажимая кнопку «Отправить», вы соглашаетесь с <a href="#">обработкой персональных данных</a>, <a href="#">пользовательским соглашением</a> и <a href="#">политикой конфиденциальности</a>
+                        </p>
+                        <button class="btn btnPoor bgOrange">
+                            Открыть счет
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
         <!-- Library Script -->
         <script  src="https://code.jquery.com/jquery-3.6.0.min.js"  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="  crossorigin="anonymous"></script>
