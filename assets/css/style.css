@@ -483,20 +483,24 @@ input {
                  -o-transform: rotate(180deg) translate(0 , -5px);
                     transform: rotate(180deg) translate(0 , -5px);
 }
-/*ANCHOR --- Кол-во элементов на странице*/
-.catalogNavQuantum span {
-    margin-right: 3px;
+
+.flags {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+       -moz-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+         -o-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+    left: 15px;
 }
-.catalogNavQuantum a {
-    color: var(--color-4);
-    padding: 0 8px;
+
+.flag {
+    display: none;
 }
-.catalogNavQuantum a:not(:last-child) {
-    border-right: 1px solid var(--color-9);
-}
-.catalogNavQuantum a.active {
-    pointer-events: none;
-    color: var(--color-2);
+
+.flag.active {
+    display: block;
 }
 
 /* ANCHOR ---- (popups)  */

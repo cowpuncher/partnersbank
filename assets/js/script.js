@@ -85,6 +85,8 @@ if (popup) {
 /* Look for any elements with the class "custom-select": */
 const customSelect = (select, count) => {
     x = document.getElementsByClassName(select);
+    /*ДОбавиление флагов*/
+    flag = document.querySelectorAll('.flag');
     l = x.length;
     for (i = 0; i < l; i++) {
         selElmnt = x[i].getElementsByTagName("select")[0];
@@ -119,7 +121,16 @@ const customSelect = (select, count) => {
                         for (k = 0; k < yl; k++) {
                             y[k].removeAttribute("class");
                         }
-                        this.setAttribute("class", "same-as-selected");
+                        this.setAttribute("class", "same-as-selected");                        
+                        /*Если флаги есть, то перебираем и подставляем их*/
+                        if (flag) {
+                            if (this.parentElement.parentElement.classList.contains('selectGeo')) {
+                                for(var i = 0; i < flag.length; i++) {
+                                    flag[i].classList.remove('active' );   
+                                }                                 
+                                flag[s.selectedIndex].classList.add('active' );
+                            } 
+                        }
                         break;
                     }
                 }
@@ -141,3 +152,6 @@ const customSelect = (select, count) => {
 
 customSelect("selectGeo", 0);
 customSelect("fullSelect", 1);
+
+let test = document.querySelector('.icon-rus');
+console.log(test);
