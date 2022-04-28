@@ -328,6 +328,9 @@ select:-webkit-autofill:focus {
     background: linear-gradient(180deg, rgba(48, 9, 152, 0.8) 0.15%, #27087B 100%);
 }
 
+.bgGradient .btnPoor:hover {
+    color: var(--color-2);
+}
 
 /* ANCHOR ---- (forms)  */
 
@@ -646,6 +649,10 @@ a.footerMenuLink:hover {
 
 .footerSocialLink img {
     width: 18px;
+}
+
+.copyright {
+    opacity: .5;
 }
 
 /* ANCHOR -- MAIN PAGE */
@@ -1098,7 +1105,6 @@ a.footerMenuLink:hover {
 }
  
 .faqItem.active {
-    height: 100%;
     -webkit-transition: all .5s ease;
     -o-transition: all .5s ease;
     -moz-transition: all .5s ease;
@@ -1129,6 +1135,10 @@ a.footerMenuLink:hover {
 .faqItem .desc {
     visibility: hidden;
     height: 0;
+    -webkit-transition: all 0s ease;
+    -o-transition: all 0s ease;
+    -moz-transition: all 0s ease;
+    transition: all 0s ease;
     -webkit-transform: translate(0 , -100%);
        -moz-transform: translate(0 , -100%);
         -ms-transform: translate(0 , -100%);
@@ -1136,10 +1146,6 @@ a.footerMenuLink:hover {
             transform: translate(0 , -100%);
     font-size: 17px;
     line-height: var(--lh-1);
-    -webkit-transition: all .1s ease;
-    -o-transition: all .1s ease;
-    -moz-transition: all .1s ease;
-    transition: all .1s ease;
 }
 
 .faqItem .desc p:not(:last-child) {
@@ -1148,16 +1154,16 @@ a.footerMenuLink:hover {
 
 .faqItem.active .desc {
     visibility: visible;   
-    height: 100%; 
+    height: 100%;
     -webkit-transform: translate(0 , 0);    
        -moz-transform: translate(0 , 0);    
         -ms-transform: translate(0 , 0);    
          -o-transform: translate(0 , 0);    
             transform: translate(0 , 0);
-            -webkit-transition: all .5s ease;
-            -o-transition: all .5s ease;
-            -moz-transition: all .5s ease;
-            transition: all .5s ease;
+            -webkit-transition: all .3s ease;
+            -o-transition: all .3s ease;
+            -moz-transition: all .3s ease;
+            transition: all .3s ease;
 }
 
 /* ANCHOR ---- (review section)  */
