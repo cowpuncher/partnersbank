@@ -18,12 +18,31 @@ if(faqItem) {
     }
 }
 
-// --------- Sliders
+// Ширина прокрутки страницы и ширины экрана
+const sizeWindow = (screen) => {
+    let scrollBar = window.innerWidth - screen;
+    return screen + scrollBar;
+}
 
-const reviewSlider = new Swiper('.reviewSlider', {
-    slidesPerView: 2.3,
-    spaceBetween: 30,
-});
+// --------- Sliders
+if(sizeWindow(document.body.clientWidth) > 768) { 
+    const reviewSlider = new Swiper('.reviewSlider', {
+        slidesPerView: 2.3,
+        spaceBetween: 30,
+    });
+}
+if(sizeWindow(document.body.clientWidth) < 768) { 
+    const partnersSlider = new Swiper('.partnersSlider', {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
+}
+
+
 
 // --------- Fixed top menu 
 let topPanel = document.querySelector('.topPanel');
@@ -153,5 +172,25 @@ const customSelect = (select, count) => {
 customSelect("selectGeo", 0);
 customSelect("fullSelect", 1);
 
-let test = document.querySelector('.icon-rus');
-console.log(test);
+// ANCHOR (Burger) 
+let burger =document.querySelector('.burger'),
+    menu = document.querySelector('.mobileNav');
+
+burger.addEventListener('click', function() {
+    burger.classList.toggle('active');
+    menu.classList.toggle('active');
+});
+
+
+let shareInput = document.querySelectorAll('.shareRef input');
+let shareBtn = document.querySelectorAll('.shareRef button');
+
+for (let i = 0; i < shareInput.length; i++) {
+    const element = shareInput[i];
+    shareBtn[i].addEventListener('click', e => {
+        element.select();
+        document.execCommand("copy");      
+        element.classList.add('add');
+    })
+}
+

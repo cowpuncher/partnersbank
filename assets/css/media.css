@@ -1,0 +1,654 @@
+/*ANCHOR max-width: 1350 */
+@media screen and (max-width: 1350px) {
+    .bonusItemTop img {
+        width: 50%;
+    }
+    .programWrap .img {
+        right: 0;
+    }
+    .programWrap .img img {
+        width: 47vw;
+    }
+    .programWrap {
+        padding: 40px 0 280px;
+    }
+}
+/*ANCHOR max-width: 1200 */
+@media screen and (max-width: 1200px) {
+    body,
+    .faqItem.active .desc,
+    .planItem .desc {
+        font-size: 1.4vw;
+    }
+    h1 {
+        font-size: 4vw;
+    }
+    h2,
+    .popupWindow .title {
+        font-size: 3.1vw;
+    }
+    h3 {
+        font-size: 2.5vw;
+    }
+    h4,
+    label {
+        font-size: 2vw;
+    }
+    .desc {
+        font-size: 1.6vw;
+    }
+    .btn,
+    .navigation a,
+    .link {
+        font-size: 1.2vw;
+    }
+    .mainOffer .desc {
+        font-size: 1.35vw;
+    }
+    .mainOffer .title span:last-child {
+        display: table;
+    }
+    .mainOfferWrap .img img {
+        width: 470px;
+    }
+    .benefitItem {
+        max-width: 20.5vw;
+    }
+    .formWrap .img img,
+    .programOffer,
+    .offerSection .offer {
+        max-width: 50vw;
+    }
+    .offerSection .img {
+        bottom: -60%;
+    }
+    .programWrap .img {
+        bottom: 23%;
+    }
+    .bonusSection h2 span::before {
+        content: '';
+        position: absolute;
+        top: -46%;
+        left: -6%;
+        background: url(../img/svg/oval.svg) no-repeat 0 0 / contain;
+        width: 100%;
+        height: 75px;
+    }
+    .bonusItem {
+        width: 29vw;
+    }
+    .bonusItem .text {
+        padding: 0 20px;
+    }
+}
+/*ANCHOR max-width: 993 */
+@media screen and (max-width: 993px) {
+    /*BURGER*/
+    .burger {
+        border: 0;
+        outline: none;
+        background: transparent;
+        position: relative;
+        z-index: 10;
+    }
+    .burger span {        
+        -webkit-transition: all .3s ease;        
+        -o-transition: all .3s ease;        
+        -moz-transition: all .3s ease;        
+        transition: all .3s ease;
+        width: 19px;
+        height: 3px;
+        display: block;
+        background: var(--color-5);
+        -webkit-border-radius: 10px;
+           -moz-border-radius: 10px;
+                border-radius: 10px;
+    }
+    .burger span:not(:last-child) {
+        margin-bottom: 3px;
+    }
+    
+    .burger.active span {
+        -webkit-transition: all .3s ease;
+        -o-transition: all .3s ease;
+        -moz-transition: all .3s ease;
+        transition: all .3s ease;
+        margin: 0;
+        background: var(--color-5);
+    }
+    .burger.active span:nth-child(1) {
+        -webkit-transform: rotate(45deg) translate(1px, 2px);
+           -moz-transform: rotate(45deg) translate(1px, 2px);
+            -ms-transform: rotate(45deg) translate(1px, 2px);
+             -o-transform: rotate(45deg) translate(1px, 2px);
+                transform: rotate(45deg) translate(1px, 2px);
+    }
+    .burger.active span:nth-child(2) {
+        display: none;
+    }
+    .burger.active span:nth-child(3) {
+        -webkit-transform: rotate(-45deg) translate(0, 0);
+           -moz-transform: rotate(-45deg) translate(0, 0);
+            -ms-transform: rotate(-45deg) translate(0, 0);
+             -o-transform: rotate(-45deg) translate(0, 0);
+                transform: rotate(-45deg) translate(0, 0);
+    }
+    /*Burger end*/
+    .mobileElement {
+        display: block;
+    }
+    .offerSection .img img {
+        width: 60vw;
+    }
+    .partnerCard {
+        width: 100%;
+
+    }
+    .partnerCard img {
+        width: 70%;
+    }
+    .navigation {
+        display: none;
+    }
+    .mobileNav {
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        transform: translate(0, -100%);
+        padding: 68px 60px 60px 16px;
+        font-size: 17px;
+        font-weight: 500;
+    }
+    .mobileNavSoc {
+        border-top: 1px solid rgba(107, 114, 128, 0.3);
+        border-bottom: 1px solid rgba(107, 114, 128, 0.3);
+        margin: 25px 0;
+        padding: 20px 0;
+    }
+    .mobileNavSoc .title {
+        margin-bottom: 16px;
+    }
+    .mobileNavSoc a {
+        background: #F5F9FF;
+        width: 100%;
+        margin: 0;
+        border-radius:  12px;
+        padding: 20px;
+    }
+    .mobileNavSoc a .img {
+        margin: 0 0 10px 0;
+    }
+    .mobileNavLinks a {
+        font-size: 13px;
+        color: #6B7280;
+        margin-bottom: 12px;
+    }
+    .mobileNav .copyright {
+        opacity: .5;
+        color: #6B7280;
+        font-size: 13px;
+        font-weight: 400;
+        margin-top: 15px;
+    }
+    .mobileNavSoc a:not(:last-child) {
+        margin-right: 20px;
+    }
+    .mobileNav li:not(:last-child) {
+        margin-bottom: 24px;
+    }
+    .mobileNav.active {
+        opacity: 1;
+        background: #fff;
+        z-index: 10;
+        transform: translate(0, 0);
+        left: 0;
+        height: 100vh;
+    }
+    .menu {
+        flex-direction: column;
+    }
+    .mobileNav .menu a:hover {
+        color: #6B7280;
+        padding-left: 5px;
+        border-left: 1px solid #F5481F;
+    }
+    .offerSecondWrap .btn img,
+    .topPanel .btn {
+        display: none;
+    }
+
+    .mainOfferWrap .img img {
+        width: 410px;
+    }
+    .benefitItem {
+        max-width: 46%;
+    }
+    .planItem {
+        max-width: 355px;
+    }
+    .bonusItem {
+        width: 100%;
+        max-width: 44.5%;
+    }
+    .footerMenu ,
+    .offerSecondWrap .btn {
+        margin: 0;
+    }
+    .benefitSection,
+    .listSection,
+    .formWrap,
+    .reviewSection,
+    .faqSection,
+    .offerSecondWrap,
+    .bonusSection {
+        padding: 50px 0;
+    }
+    .list li {
+        width: 100%;
+        max-width: 50%;
+        margin-bottom: 20px;
+    }
+    .programWrap {
+        padding: 40px 0 183px;
+    }
+    .planSection {
+        padding: 50px 0 90px;
+    }
+}
+
+/*ANCHOR max-width: 768 */
+@media screen and (max-width: 768px) {
+    br {
+        display: none;
+    }
+    .topPanel .logo img {
+        width: 170px;
+    }
+    .mainOfferWrap {
+        padding: 30px 0 395px;
+    }
+    .mainOffer .buttons {
+        margin-top: 20px;
+    }
+    h1 {
+        font-size: 7vw;
+    }
+    h2, .popupWindow .title {
+        font-size: 7.1vw;
+    }
+    h3 {
+        font-size: 23px;
+    }
+    h4, label {
+        font-size: 20px;
+    }
+    body, .faqItem.active .desc, .planItem .desc {
+        font-size: 15px;
+    }
+    .btn.bgOrange,
+    .link {
+        padding: 16px 30px;
+    }
+    .btn, .navigation a, .link {
+        font-size: 14px;
+    }
+    .benefitItem {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .mainOffer .title span:last-child {
+        display: table;
+        margin-top: -13px;
+    }
+    .mainOffer .desc {
+        font-size: 17px;
+        margin: 15px 0 0;
+        line-height: var(--lh-1);
+    }
+    .mainOfferWrap .img img {
+        width: 310px;
+    }
+    .benefitSection, .listSection, .formWrap, .reviewSection, .faqSection, .offerSecondWrap, .bonusSection {
+        padding: 45px 0;
+    }
+    .benefitSection h2 span:before {
+        width: 160%;
+        left: auto;
+        right: 0;
+    }
+    .benefitItem {
+        max-width: 100%;
+        margin-bottom: 15px;
+        padding: 40px 40px 25px 20px;
+    }
+    .benefitItem .text {        
+        line-height: 21px;
+    }
+    .benefitSection h2 {
+        margin-bottom: 25px;
+    }
+    .benefitItem .img {
+        margin-bottom: 7px;
+    }
+    .planSection {
+        padding: 38px 0 30px;
+    }
+    .planSection h2 {
+        margin-bottom: 35px;
+    }
+    .partnerColumn,
+    .centerWrapper {
+        margin: 0;
+    }
+    .planList {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+    .planItemTop {
+        padding: 30px 15px 25px;
+        height: auto;
+    }
+    .planItem .title {
+        margin-bottom: 10px;
+    }
+    .planItem ul {
+        padding: 30px 10px 30px 60px;
+    }
+    .planItem li:not(:last-child) {
+        margin-bottom: 23px;
+    }
+    .planItem {
+        margin-bottom: 35px;
+    }
+    .partnerSection h2 {
+        margin-bottom: 15px;
+    }
+    .planItemTop .desc {
+        line-height: 23px;
+    }
+    .offerSection {
+        padding: 40px 0px 73px;
+    }
+    .formWrap .img img, .programOffer, .offerSection .offer {
+        max-width: 100%;
+    }
+    .desc {
+        font-size: 17px;
+    }
+    .offerSection .desc {
+        margin-bottom: 35px;
+    }
+    .offerSection .img {
+        bottom: -62%;
+    }
+    .partnerSection {
+        padding: 110px 0 15px;
+    }
+    .partner {
+        margin: 0;
+        width: 100%;
+        flex-direction: column;
+    }
+    .partnerColumn {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .partnerCard {
+        width: 100%;
+        height: auto;
+        padding: 25px;
+    }
+    .partnerSection .desc {
+        margin-bottom: 23px;
+    }
+    .partnerCard img {
+        width: 100%;
+        height: auto;
+    }
+    .programOffer .title {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .programOffer .desc {
+        text-align: center;
+        line-height: 21px;
+    }
+    .programWrap .img {
+        position: unset;
+        width: 100%;
+    }
+    .programWrap .img img {
+        width: 100%;
+    }
+    .programOffer .btn {
+        padding: 13px 75px;
+        position: absolute;
+        bottom: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        max-width: 255px;
+    }
+    .bonusSection h2 {
+        margin-bottom: 11px;
+    }
+    .bonusSection .desc {
+        margin-bottom: 30px;
+    }
+    .bonusList {
+        margin: 0;
+    }
+    .bonusItemTop {
+        margin-bottom: 0;
+    }
+    .bonusItem {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 0 15px;
+    }
+    .bonusSection .btn {
+        margin: 20px auto 0;
+        max-width: 245px;
+        padding: 13px 0;
+    }
+    .offerSecondWrap {
+        padding: 27px 0 35px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .offerSecondWrap .title {
+        margin-bottom: 20px;
+        font-size: 24px;
+        font-weight: 600;
+    }
+    .offerSecondWrap .btn {
+        margin-top: 38px;
+        padding: 13px 25px;
+    }
+    .faqSection h2 {
+        margin-bottom: 35px;
+    }
+    .faqItem {
+        padding: 0 10px 0 20px;
+    }
+    
+    .faqItem.active {
+        padding: 0 10px 22px 20px;
+    }
+    .faqItem .title {
+        width: 80%;
+        height: 114px;
+    }
+    .faqItem.active .desc {
+        line-height: 20px;
+    }
+    .faqItem .desc p:not(:last-child),
+    .faqItem:not(:last-child) {
+        margin-bottom: 20px;
+    }
+    .faqItem::after {
+        top: 19px;
+        right: 12px;
+    }
+    .reviewSection h2 {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .reviewSlider .swiper-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .reviewSliderItem {
+        padding: 15px 15px 25px 20px;
+        margin-bottom: 18px;
+    }
+    .reviewSliderItem .more,
+    .reviewSliderItem p {
+        line-height: 21px;
+        margin-bottom: 10px;
+    }
+    h4.reviewAuthorName {
+        font-size: 17px;
+        font-weight: 500;
+    }
+    .reviewAuthorName span {
+        display: block;
+        font-size: 13px;
+        font-weight: 400;
+    }
+    .reviewAuthor {
+        justify-content: space-between;
+    }
+    .reviewSection {
+        padding-bottom: 20px;
+    }
+    .formWrap {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 0 30px;
+    }
+    .formSection .form {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+    label {
+        font-size: 15px;
+        margin: 8px 0;
+    }
+    .form h2 {
+        margin-bottom: 11px;
+    }
+    .form .wrapper {
+        flex-direction: column;
+    }
+    .customSelect,
+    .form label input {
+        margin-top: 5px;
+    }
+    .select-selected,
+    .form label input {
+        height: 50px;
+    }
+    .form .wrapper label:not(:last-child) {
+        margin-right: 0;
+    }
+    .form button {
+        width: 100%;
+    }
+    .listSection {
+        padding: 30px 0;
+    }
+    .listSection h2 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .list li {
+        max-width: 100%;
+    }
+    .listSection .btn {
+        max-width: 100%;
+        margin: 0;
+    }
+    .footer {
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+    .footerSection {
+        padding: 30px 0;
+    }
+    .footerLogo .logo {
+        width: 120px;
+        margin-bottom: 10px;
+    }
+    .footerLogo .logo img {
+        width: 100%;
+    }
+    .footerLogo .desc {
+        font-size: 13px;
+        font-weight: 500;
+    }
+    .footerMenu {
+        flex-wrap: nowrap;
+        width: 310%;
+    }
+    .footerMenuItem {
+        width: auto;
+        margin: 0 18px 0 0;
+        padding: 17px 0;
+    }
+    .scrollMenu {
+        overflow: overlay;
+        border-top: 0.5px solid rgba(51, 51, 51, 0.5);
+        border-bottom: 0.5px solid rgba(51, 51, 51, 0.5);
+        margin: 15px 0 23px;
+    }
+    .footerSocial {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .footerSocialLink {
+        margin: 0 23px 0 0;
+    }
+    .footerSocialLink .img {
+        width: 37px;
+        height: 37px;
+
+    }
+    .footerSocialLink .img.oval {
+        border-radius: 50%;
+    }
+    .linksWrap {
+        margin-bottom: 15px;
+        display: flex;
+        width: 260%;
+    }
+    .scrollLinks {
+        overflow: overlay;
+    }
+    .partnerSection .centerWrapper {
+        display: none;
+    }
+    .partnersSlider {
+        display: block;
+        position: relative;
+    }
+    .partnersSlider .swiper-pagination {
+        bottom: -25px;
+    }
+    .partnersSlider .swiper-pagination-bullet {
+        background: #FEE9E5;
+    }
+    .partnersSlider .swiper-pagination-bullet-active {
+        background: #F5481F;
+    }
+    .partnersSlider  .swiper-slide {
+    }
+}
