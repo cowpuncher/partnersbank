@@ -194,3 +194,34 @@ for (let i = 0; i < shareInput.length; i++) {
     })
 }
 
+/* ANCHOR (Tabs) */
+
+let tabsWrap = document.querySelector('.tabsContainer .tabs');
+let tabs = document.querySelectorAll('.tabsContainer .tab');
+let activeTab = document.querySelector('.tabsContainer .activeElement');
+let contentTab = document.querySelectorAll('.tabsContainer .content');
+
+if (tabs) {
+    window.onload = () => {
+        for(var i = 0; i < tabs.length; i++) {
+           if (tabs[i].classList.contains('active')) {
+                activeTab.setAttribute('style', 'height: ' + tabs[i].offsetHeight + 'px; width: ' + tabs[i].clientWidth + 'px; transform: translate( ' + tabs[i].offsetLeft+'px, 0)');
+           }
+           tabs[i].addEventListener('click', e => {
+                let elm = e.target;
+                for(var i = 0; i < tabs.length; i++) {
+                    tabs[i].classList.remove('active');
+                 }
+                elm.classList.add('active');
+                activeTab.setAttribute('style', 'height: '+elm.offsetHeight+'px; width: '+elm.clientWidth+'px; transform: translate( '+elm.offsetLeft+'px, 0)');
+                for(var i = 0; i < tabs.length; i++) {
+                    contentTab[i].classList.remove('active');
+                    if(tabs[i].classList.contains('active')) {
+                        contentTab[i].classList.add('active');
+                    }
+                }
+           });
+        }
+    };
+};
+

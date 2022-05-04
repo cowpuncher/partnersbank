@@ -60,7 +60,9 @@ a {
 article {
     position: relative;
     padding: 20px 120px 20px 80px;
-    border-radius: var(--border-radius-1);
+    -webkit-border-radius: var(--border-radius-1);
+       -moz-border-radius: var(--border-radius-1);
+            border-radius: var(--border-radius-1);
     border: 1px solid var(--color-4);
     margin: -10px 0 50px;
 }
@@ -69,11 +71,27 @@ article::before {
     content: url(../img/svg/info.svg);
     width: 24px;
     height: 24px;
-    border-radius: 50%;
+    -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+            border-radius: 50%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 1px solid var(--color-4);
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-border-radius: 1px solid var(--color-4);
+       -moz-border-radius: 1px solid var(--color-4);
+            border-radius: 1px solid var(--color-4);
     position: absolute;
     left: 40px;
 }
@@ -350,10 +368,18 @@ select:-webkit-autofill:focus {
     background: var(--color-4);
 }
 
+
+
 .btn.bgPurple:hover {
     background: var(--color-4);
     color: var(--color-2);
     border-color: transparent;
+}
+
+.btnPoor.bgPurple:hover {
+    border-color: var(--color-4);
+    background: var(--color-2);
+    color: var(--color-4);
 }
 
 .bgGradient {
@@ -399,9 +425,21 @@ select:-webkit-autofill:focus {
 
 .scale:hover:before {
     content: url(../img/svg/search.svg);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -409,6 +447,9 @@ select:-webkit-autofill:focus {
     top: 0;
     left: 0;
     background: rgba(0, 0, 0, 0.3);
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    -moz-transition: all .3s ease;
     transition: all .3s ease;
 }
 
@@ -416,14 +457,17 @@ select:-webkit-autofill:focus {
 /* ANCHOR ---- (inner page)  */
 
 .innerBanner {
-    border-radius: var(--border-radius-1);
+    -webkit-border-radius: var(--border-radius-1);
+       -moz-border-radius: var(--border-radius-1);
+            border-radius: var(--border-radius-1);
     margin-top: 70px;
 }
 
 .innerBanner img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 
 .innerContent {
@@ -489,7 +533,9 @@ select:-webkit-autofill:focus {
     height: 185px;
     padding: 0 70px;
     background: var(--color-6);
-    border-radius: var(--border-radius-1);
+    -webkit-border-radius: var(--border-radius-1);
+       -moz-border-radius: var(--border-radius-1);
+            border-radius: var(--border-radius-1);
     margin: 0 15px;
 }
 
@@ -499,6 +545,10 @@ select:-webkit-autofill:focus {
 }
 
 .innerContent .wrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -508,10 +558,28 @@ select:-webkit-autofill:focus {
 
 .innerContent a[download] {
     background: var(--color-6);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     text-align: center;
     max-width: 255px;
     min-height: 185px;
@@ -519,13 +587,17 @@ select:-webkit-autofill:focus {
     padding: 20px;
     font-size: 15px;
     font-weight: 500;
-    border-radius: var(--border-radius-1);
+    -webkit-border-radius: var(--border-radius-1);
+       -moz-border-radius: var(--border-radius-1);
+            border-radius: var(--border-radius-1);
 }
 
 .innerContent a[download]:before {
     content: '';
     background: var(--color-2) url(../img/svg/file.svg) no-repeat 50% 50%;
-    border-radius: 50%;
+    -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+            border-radius: 50%;
     width: 50px;
     height: 50px;
     margin-bottom: 15px;
@@ -545,8 +617,12 @@ select:-webkit-autofill:focus {
 .shareRef input {
     background: #FFFFFF;
     border: 1px solid rgba(51, 51, 51, 0.1);
-    box-sizing: border-box;
-    border-radius: 12px;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-border-radius: 12px;
+       -moz-border-radius: 12px;
+            border-radius: 12px;
     padding: 11px;
     height: auto;
     margin: 0;
@@ -638,6 +714,74 @@ input {
 
 .bgCold .btn {
     height: 58px;
+}
+
+/*ANCHOR ---- (tabs) */
+
+.tabs {
+    position: relative;
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -moz-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #F7F7F7;
+    -webkit-border-radius: var(--border-radius-1);
+       -moz-border-radius: var(--border-radius-1);
+            border-radius: var(--border-radius-1);
+            padding: 4px;
+}
+
+.tab {
+    width: auto;
+    font-size: 16px;
+    font-weight: 500;      
+    padding: 8px 16px;
+    color: #252E3B;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    -webkit-border-radius: var(--border-radius-1);
+       -moz-border-radius: var(--border-radius-1);
+            border-radius: var(--border-radius-1);
+}
+
+.tab:not(:last-of-type) {
+    margin-right: 12px;
+}
+
+.tab.active ~ .activeElement {
+    position: absolute;
+    left: 0;
+    z-index: 0;
+    -webkit-border-radius: var(--border-radius-1);
+       -moz-border-radius: var(--border-radius-1);
+            border-radius: var(--border-radius-1);
+    -webkit-box-shadow: 0px 4px 16px rgba(9, 60, 102, 0.1);
+       -moz-box-shadow: 0px 4px 16px rgba(9, 60, 102, 0.1);
+            box-shadow: 0px 4px 16px rgba(9, 60, 102, 0.1);
+    background: #fff;  
+    -webkit-transition: all .5s ease;  
+    -o-transition: all .5s ease;  
+    -moz-transition: all .5s ease;  
+    transition: all .5s ease;  
+}
+
+.tabsContainer .content  {
+    display: none;
+}
+
+.tabsContainer .content.active  {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
 }
 
 
@@ -1762,7 +1906,11 @@ a.footerMenuLink:hover {
 
 .subscribe .subscribeForm {
     width: 100%;
-    justify-content: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .subscribe .subscribeForm label {
@@ -1773,7 +1921,9 @@ a.footerMenuLink:hover {
     width: 130px;
     height: 130px;
     background: #ffffff;
-    border-radius: 50%;
+    -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+            border-radius: 50%;
 }
 
 .subscribe .title {
@@ -1785,3 +1935,85 @@ a.footerMenuLink:hover {
     font-size: 17px;
 }
 
+/* ANCHOR ---- (tariff section)  */
+
+.tariffsSection {
+    padding: 65px 0;
+}
+
+.tariffsSection h2.title {
+    margin-bottom: 25px;
+}
+
+.tariffsSection .desc {
+    max-width: 600px;
+    margin-bottom: 35px;
+}
+
+.tariffsSection .contents {
+    margin-top: 45px;
+}
+
+.tariffCard {
+    padding: 20px;
+    max-width: 405px;
+    width: 100%;
+    margin: 0 16px 40px;
+    -webkit-border-radius: var(--border-radius-1);
+       -moz-border-radius: var(--border-radius-1);
+            border-radius: var(--border-radius-1);
+    -webkit-box-shadow: var(--box-shadow-1);
+       -moz-box-shadow: var(--box-shadow-1);
+            box-shadow: var(--box-shadow-1);
+}
+
+.tariffsSection .content {
+    margin: 0 -16px;
+}
+
+.tariffCard .img {
+    -webkit-border-radius: var(--border-radius-1);
+       -moz-border-radius: var(--border-radius-1);
+            border-radius: var(--border-radius-1);
+    overflow: hidden;
+    width: 60px;
+    height: 60px;
+    margin: 0 20px 16px 0;
+}
+
+.tariffCard .img img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+
+.tariffCard .title {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.tariffCard .title span {
+    color: var(--color-1);
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 8px;
+}
+
+.tariffCard .price {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.tariffCard .buttons a {
+    padding: 9px 18px;
+    font-size: 14px;
+    font-weight: 700;
+    border: 2px solid transparent;
+}
+
+.tariffCard .link:hover {
+    background: var(--color-4);
+    color: var(--color-2);
+}
