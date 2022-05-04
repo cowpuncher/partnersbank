@@ -596,7 +596,7 @@ input {
     background: var(--color-3);
     height: 58px;
     border: 0;
-    padding: 0 12px;
+    padding: 0 10px 0 24px;
     font-size: 15px;
     outline: none;
     -webkit-border-radius: var(--border-radius-1);
@@ -654,11 +654,6 @@ input {
     cursor: pointer;
 }
 
-.selectGeo.customSelect {
-    width: 110px;
-    text-align: end;
-}
-
 .customSelect select {
     display: none;
 }
@@ -681,17 +676,6 @@ input {
     -webkit-border-radius: 12px;
     -moz-border-radius: 12px;
     border-radius: 12px;
-}
-
-.selectGeo .select-selected {
-    -webkit-box-pack: end;
-    -webkit-justify-content: flex-end;
-    -moz-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-    -webkit-border-radius: 12px 0 0 12px;
-    -moz-border-radius: 12px 0 0 12px;
-    border-radius: 12px 0 0 12px;
 }
 
 .select-selected {}
@@ -738,10 +722,6 @@ input {
     -o-transition: all .3s ease;
     -moz-transition: all .3s ease;
     transition: all .3s ease;
-}
-
-.selectGeo .select-selected:after {
-    right: 8px;
 }
 
 .select-selected.select-arrow-active:after {
@@ -1683,9 +1663,7 @@ a.footerMenuLink:hover {
 
 .phoneWrap input {
     width: 100%;
-    -webkit-border-radius: 0 12px 12px 0;
-    -moz-border-radius: 0 12px 12px 0;
-    border-radius: 0 12px 12px 0;
+    border-radius: var(--border-radius-1);
 }
 
 /* ANCHOR ---- (list section)  */
