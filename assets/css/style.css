@@ -10,6 +10,7 @@
     --color-4: #27087B;
     --color-5: #F5481F;
     --color-6: #ECF2FB;
+    --color-7: #F7F7F7;
     --fs-1: 17px;
     --fs-2: 20px;
     --fs-3: 30px;
@@ -64,7 +65,7 @@ article {
        -moz-border-radius: var(--border-radius-1);
             border-radius: var(--border-radius-1);
     border: 1px solid var(--color-4);
-    margin: -10px 0 50px;
+    margin: 0 0 50px;
 }
 
 article::before {
@@ -493,11 +494,11 @@ select:-webkit-autofill:focus {
 }
 
 .innerContentBody p {
-    width: 80%;    
+    width: 83%;    
 }
 
 .innerContentBody p:not(:last-child) {
-    margin-bottom: 40px;
+    margin-bottom: 25px;
 }
 
 .innerContentBody {
@@ -519,7 +520,7 @@ select:-webkit-autofill:focus {
 .innerContent h3 {
     font-size: 24px;
     font-weight: 600;
-    margin: 50px 0 20px;
+    margin: 47px 0 20px;
 }
 
 .innerContent .images {
@@ -626,6 +627,10 @@ select:-webkit-autofill:focus {
     padding: 11px;
     height: auto;
     margin: 0;
+    font-weight: 500;
+    font-size: 16px;
+    width: 210px;
+    letter-spacing: 0.05em;
 }
 
 .shareRef input.add {
@@ -899,7 +904,6 @@ input {
     display: block;
 }
 
-
 /* ANCHOR ---- (popups)  */
 
 .popup {
@@ -917,14 +921,14 @@ input {
     opacity: 1;
     visibility: visible;
     background: rgba(0, 0, 0, 0.8);
-    z-index: 99;
+    z-index: 999;
     width: 100%;
     height: 100%;
 }
 
 .popupWindow {
     overflow: overlay;
-    height: 90%;
+    height: 80%;
     padding: 50px 155px;
     position: fixed;
     top: 50%;
@@ -950,7 +954,7 @@ input {
     position: fixed;
     top: 20px;
     right: 20px;
-    z-index: 999;
+    z-index: 9999;
     background: transparent;
     outline: none;
     border: none;
@@ -969,6 +973,82 @@ input {
 
 .popupWindow .btn {
     width: 100%;
+}
+
+.popupTariff .btn {
+    width: auto;
+}
+
+.popupTariff .input {
+    background: var(--color-7);
+    width: 100%;
+    border-radius: var(--border-radius-1);
+    font-weight: 500;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    padding: 13px 20px;
+}
+
+.popupTariff .input img {
+    display: block;
+    margin-left: 10px;
+}
+
+.popupTariffInfo .top {
+    margin-bottom: 25px;
+}
+
+.popupTariffInfo .label {
+    margin-bottom: 13px;
+    display: block;
+}
+
+.popupTariffInfo h3 {
+    margin-bottom: 22px;
+}
+
+.popupTariff .popupWindow {
+    width: 100%;
+    max-width: 750px;
+    border-radius: 12px 0 0 12px;
+    padding: 50px;
+}
+
+.popupTariffInfo .input {
+    margin: 12px 0 17px;
+}
+
+.popupTariffInfo {
+    border-bottom: 1px solid rgba(107, 114, 128, 0.3);
+    padding-bottom: 30px;
+    margin-bottom: 32px;
+}
+
+/* ANCHOR ---- (tooltip)  */
+
+.tooltip {
+	cursor: help;
+}
+
+.tooltip::after {
+	background: var(--color-3);
+	border-radius: 8px 8px 8px 0px;
+	box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+	color: var(--color-1);
+	content: attr(data-tooltip); 
+    margin-top: -47px;
+    margin-left: 20px;
+	opacity: 0;
+	padding: 3px 7px;
+	position: absolute;
+	visibility: hidden; 			
+	transition: all 0.4s ease-in-out; 
+}
+		
+.tooltip:hover::after {
+	opacity: 1;
+	visibility: visible;
 }
 
 /*SCROLLBAR*/
@@ -1072,6 +1152,7 @@ input {
 .mainOfferWrap .img {
     bottom: 0;
     right: 2.5%;
+    z-index: -1;
 }
 
 .headerFigure.bgCold .mainOfferWrap .img {
@@ -1354,6 +1435,8 @@ a.footerMenuLink:hover {
 .offerSection .desc {
     text-decoration: underline;
     margin-bottom: 50px;
+    color: var(--color-2);
+    display: block;
 }
 
 .offerSection .btn {
@@ -1448,6 +1531,7 @@ a.footerMenuLink:hover {
 .programWrap .img {
     bottom: 12%;
     right: -5%;
+    z-index: -1;
 }
 
 
@@ -1817,6 +1901,7 @@ a.footerMenuLink:hover {
     padding: 50px 0 50px;
 }
 
+.listSection h3,
 .listSection h2 {
     width: 50%;
     margin-bottom: 40px;
@@ -1995,3 +2080,19 @@ a.footerMenuLink:hover {
     background: var(--color-4);
     color: var(--color-2);
 }
+
+.tariffCard a.downloadTariff {
+    display: inline-flex;
+    align-items: center;
+    border-radius: var(--border-radius-1);
+    background: #F9FBFC;
+    padding: 10px 20px 10px 10px;
+    color: var(--color-4);
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.downloadTariff img {
+    margin-right: 11px;
+}
+

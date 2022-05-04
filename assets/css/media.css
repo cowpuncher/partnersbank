@@ -25,35 +25,27 @@
 }
 /*ANCHOR max-width: 1200 */
 @media screen and (max-width: 1200px) {
-    body,
-    .faqItem.active .desc,
-    .planItem .desc {
-        font-size: 1.4vw;
+    .navigation a {
+        font-weight: 500;
+        font-size: 1vw;
     }
     h1 {
         font-size: 4vw;
     }
-    h2,
     .popupWindow .title {
         font-size: 3.1vw;
     }
-    h3 {
-        font-size: 2.5vw;
+    h2 {
+        font-size: 30px;
     }
-    h4,
-    label {
-        font-size: 2vw;
+    h3 {
+        font-size: 24px;
     }
     .desc {
-        font-size: 1.6vw;
-    }
-    .btn,
-    .navigation a,
-    .link {
-        font-size: 1.2vw;
+        font-size: 20px;
     }
     .mainOffer .desc {
-        font-size: 1.35vw;
+        width: 50%;
     }
     .mainOffer .title span:last-child {
         display: table;
@@ -269,14 +261,14 @@
         width: 410px;
     }
     .benefitItem {
-        max-width: 46%;
+        max-width: 46vw;
     }
     .planItem {
         max-width: 355px;
     }
     .bonusItem {
         width: 100%;
-        max-width: 44.5%;
+        max-width: 43.5%;
     }
     .footerMenu ,
     .offerSecondWrap .btn {
@@ -306,6 +298,9 @@
     .tariffCard {
         max-width: 45%;
     }
+    .partnerSection {
+        padding: 100px 0 0;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 993px) {
@@ -321,7 +316,7 @@
 }
 
 /*ANCHOR max-width: 768 */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     br {
         display: none;
     }
@@ -336,9 +331,6 @@
     }
     h1 {
         font-size: 7vw;
-    }
-    h2, .popupWindow .title {
-        font-size: 7.1vw;
     }
     h3 {
         font-size: 23px;
@@ -356,10 +348,6 @@
     .btn, .navigation a, .link {
         font-size: 14px;
     }
-    .benefitItem {
-        margin-left: 0;
-        margin-right: 0;
-    }
     .mainOffer .title span:last-child {
         display: table;
         margin-top: -13px;
@@ -370,7 +358,8 @@
         line-height: var(--lh-1);
     }
     .mainOfferWrap .img img {
-        width: 310px;
+        max-width: 345px;
+        width: 100%;
     }
     .benefitSection, .listSection, .formWrap, .reviewSection, .faqSection, .offerSecondWrap, .bonusSection {
         padding: 45px 0;
@@ -379,11 +368,6 @@
         width: 160%;
         left: auto;
         right: 0;
-    }
-    .benefitItem {
-        max-width: 100%;
-        margin-bottom: 15px;
-        padding: 40px 40px 25px 20px;
     }
     .benefitItem .text {        
         line-height: 21px;
@@ -444,8 +428,13 @@
     .offerSection {
         padding: 40px 0px 73px;
     }
-    .formWrap .img img, .programOffer, .offerSection .offer {
+    .formWrap .img img, .programOffer {
         max-width: 100%;
+    }
+    .offerSection .offer {
+        max-width: 65%;
+        position: relative;
+        z-index: 1;
     }
     .desc {
         font-size: 17px;
@@ -548,11 +537,6 @@
     }
     .bonusItemTop {
         margin-bottom: 0;
-    }
-    .bonusItem {
-        width: 100%;
-        max-width: 100%;
-        margin: 0 0 15px;
     }
     .bonusSection .btn {
         margin: 20px auto 0;
@@ -954,11 +938,45 @@
     .tariffsSection {
         padding: 30px 0;
     }
+    .mainOffer .desc {
+        width: 100%;
+    }
+    .benefitItem {
+        max-width: 42vw;
+    }
+}
+
+
+/*ANCHOR max-width: 568 */
+@media screen and (max-width: 568px) {
+    .benefitItem {
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .bonusItem {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 0 15px;
+    }
 }
 
 /*ANCHOR max-width: 500 */
 @media screen and (max-width: 500px) {
     .headerFigure.bgCold .mainOfferWrap {
         padding-bottom: 77vw;
+    }       
+    .benefitItem {
+        max-width: 100%;
+        margin-bottom: 15px;
+        padding: 40px 40px 25px 20px;
+    }
+}
+
+/*ANCHOR max-width: 400 */
+@media screen and (max-width: 400px) { 
+    .mainOfferWrap {
+        padding: 30px 0 103vw;
     }
 }

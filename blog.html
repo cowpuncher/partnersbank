@@ -8,7 +8,7 @@
         Library style 
     -->
     <!-- Swiper style -->
-    <link  rel="stylesheet"  href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link  rel="stylesheet"  href="./assets/lib/swiper/swiper-bundle.min.css" />
 
     <!-- Main style -->
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -166,13 +166,13 @@
         <main>            
             <section class="listSection">
                 <div class="container">
-                    <h2>
+                    <h3>
                         Регистрация ООО
-                    </h2>
+                    </h3>
                     <div class="centerWrapper">
                         <ul class="list dFlex ais fww">
                             <li>
-                                <a class="item bgCold" href="#">
+                                <a class="item bgCold" href="/inner-page.html">
                                     <div class="img">
                                         <img src="./assets/img/card.jpg" alt="img">
                                     </div>
@@ -185,7 +185,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a class="item bgCold" href="#">
+                                <a class="item bgCold" href="/inner-page.html">
                                     <div class="img">
                                         <img src="./assets/img/card1.jpg" alt="img">
                                     </div>
@@ -198,7 +198,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a class="item bgCold" href="#">
+                                <a class="item bgCold" href="/inner-page.html">
                                     <div class="img">
                                         <img src="./assets/img/card2.jpg" alt="img">
                                     </div>
@@ -211,7 +211,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a class="item bgCold" href="#">
+                                <a class="item bgCold" href="/inner-page.html">
                                     <div class="img">
                                         <img src="./assets/img/card3.jpg" alt="img">
                                     </div>
@@ -229,13 +229,13 @@
             </section> 
             <section class="listSection">
                 <div class="container">
-                    <h2>
+                    <h3>
                         Регистрация ИП
-                    </h2>
+                    </h3>
                     <div class="centerWrapper">
                         <ul class="list dFlex ais fww">
                             <li>
-                                <a class="item bgCold" href="#">
+                                <a class="item bgCold" href="/inner-page.html">
                                     <div class="img">
                                         <img src="./assets/img/card.jpg" alt="img">
                                     </div>
@@ -248,7 +248,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a class="item bgCold" href="#">
+                                <a class="item bgCold" href="/inner-page.html">
                                     <div class="img">
                                         <img src="./assets/img/card1.jpg" alt="img">
                                     </div>
@@ -261,7 +261,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a class="item bgCold" href="#">
+                                <a class="item bgCold" href="/inner-page.html">
                                     <div class="img">
                                         <img src="./assets/img/card2.jpg" alt="img">
                                     </div>
@@ -274,7 +274,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a class="item bgCold" href="#">
+                                <a class="item bgCold" href="/inner-page.html">
                                     <div class="img">
                                         <img src="./assets/img/card3.jpg" alt="img">
                                     </div>
@@ -292,13 +292,13 @@
             </section>
             <section class="listSection">
                 <div class="container">
-                    <h2>
+                    <h3>
                         Малый бизнес
-                    </h2>
+                    </h3>
                     <div class="centerWrapper">
                         <ul class="list dFlex ais fww">
                             <li>
-                                <a class="item bgCold" href="#">
+                                <a class="item bgCold" href="/inner-page.html">
                                     <div class="img">
                                         <img src="./assets/img/card.jpg" alt="img">
                                     </div>
@@ -311,7 +311,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a class="item bgCold" href="#">
+                                <a class="item bgCold" href="/inner-page.html">
                                     <div class="img">
                                         <img src="./assets/img/card1.jpg" alt="img">
                                     </div>
@@ -324,7 +324,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a class="item bgCold" href="#">
+                                <a class="item bgCold" href="/inner-page.html">
                                     <div class="img">
                                         <img src="./assets/img/card2.jpg" alt="img">
                                     </div>
@@ -337,7 +337,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a class="item bgCold" href="#">
+                                <a class="item bgCold" href="/inner-page.html">
                                     <div class="img">
                                         <img src="./assets/img/card3.jpg" alt="img">
                                     </div>
@@ -499,17 +499,19 @@
                         </label>
                         <label>
                             Какую фирму хотите открыть?
-                            <select name="" id="">
-                                <option value="">
-                                    Выберите
-                                </option>
-                                <option value="">
-                                    ИП
-                                </option>
-                                <option value="">
-                                    ООО
-                                </option>
-                            </select>
+                            <div  class="fullSelect customSelect">
+                                <select name="" id="">
+                                    <option value="">
+                                        Выберите
+                                    </option>
+                                    <option value="">
+                                        ИП
+                                    </option>
+                                    <option value="">
+                                        ООО
+                                    </option>
+                                </select>
+                            </div>
                         </label>
                         <label>
                             Email
@@ -529,7 +531,7 @@
         <!-- Library Script -->
         <script  src="https://code.jquery.com/jquery-3.6.0.min.js"  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="  crossorigin="anonymous"></script>
         <!-- Swiper Script -->
-        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        <script src="./assets/lib/swiper/swiper-bundle.min.js"></script>
         <!-- Main Script -->  
         <script src="./assets/js/script.js"></script>
 </body>
