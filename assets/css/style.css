@@ -1092,6 +1092,7 @@ input {
 .mainOfferWrap .img {
     bottom: 0;
     right: 2.5%;
+    z-index: -1;
 }
 
 .headerFigure.bgCold .mainOfferWrap .img {
@@ -1322,6 +1323,10 @@ a.footerMenuLink:hover {
 
 .planItem li {
     position: relative;
+}
+
+.planItem li span {
+    font-weight: 600;
 }
 
 .planItem li:not(:last-child) {
