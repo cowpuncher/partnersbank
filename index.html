@@ -8,7 +8,7 @@
         Library style 
     -->
     <!-- Swiper style -->
-    <link  rel="stylesheet"  href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link  rel="stylesheet"  href="./assets/lib/swiper/swiper-bundle.min.css" />   
 
     <!-- Main style -->
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -42,7 +42,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="/blog.html">
                                         Блог
                                     </a>
                                 </li>
@@ -173,7 +173,7 @@
                         <ul class="benefitList dFlex ais fww">
                             <li class="benefitItem">
                                 <div class="img">
-                                    <img src="./assets/img/svg/benefit1.svg" alt="benefit">
+                                    <img src="./assets/img/benefit1.png" alt="benefit">
                                 </div>
                                 <h4 class="title">
                                     Бесплатно
@@ -184,7 +184,7 @@
                             </li>
                             <li class="benefitItem">
                                 <div class="img">
-                                    <img src="./assets/img/svg/benefit2.svg" alt="benefit">
+                                    <img src="./assets/img/benefit2.png" alt="benefit">
                                 </div>
                                 <h4 class="title">
                                     Не выходя из дома
@@ -195,7 +195,7 @@
                             </li>
                             <li class="benefitItem">
                                 <div class="img">
-                                    <img src="./assets/img/svg/benefit3.svg" alt="benefit">
+                                    <img src="./assets/img/benefit3.png" alt="benefit">
                                 </div>
                                 <h4 class="title">
                                     Сделаем всё за вас
@@ -206,7 +206,7 @@
                             </li>
                             <li class="benefitItem">
                                 <div class="img">
-                                    <img src="./assets/img/svg/benefit4.svg" alt="benefit">
+                                    <img src="./assets/img/benefit4.png" alt="benefit">
                                 </div>
                                 <h4 class="title">
                                     Экономия для бизнеса
@@ -294,7 +294,7 @@
                             <h2 class="title">
                                 Бесплатно и без подводных камней
                             </h2>
-                            <p class="desc">
+                            <a href="#" class="desc">
                                 Почему мы можем позволить себе <br> делать это бесплатно?
                             </p>
                             <a href="#" class="btn btnPoor bgOrange btnPopup">
@@ -698,31 +698,6 @@
                             <label>
                                 Контактный телефон
                                 <div class="phoneWrap dFlex aic">
-                                    <div  class="selectGeo customSelect">
-                                        <div class="flags">
-                                            <div class="flag active">
-                                                <img src="./assets/img/svg/flag.svg" alt="flag">
-                                            </div>
-                                            <div class="flag">
-                                                <img src="./assets/img/svg/flag1.svg" alt="flag">
-                                            </div>
-                                            <div class="flag">
-                                                <img src="./assets/img/svg/flag2.svg" alt="flag">
-                                            </div>
-                                        </div>
-                                        <select>
-                                            <option value="+7">
-                                                
-                                                +7
-                                            </option>
-                                            <option value="+2">
-                                                +2
-                                            </option>
-                                            <option value="+2">
-                                                +81
-                                            </option>
-                                        </select>
-                                    </div>
                                     <input name="phone" type="tel">
                                 </div>
                             </label>
@@ -940,32 +915,24 @@
                         <label>
                             Контактный телефон
                             <div class="phoneWrap dFlex aic">
-                                <select name="" id="">
-                                    <option value="+7">
-                                        <img src="./assets/img/svg/flag.svg" alt="flag">
-                                        +7
-                                    </option>
-                                    <option value="+2">
-                                        <img src="./assets/img/svg/flag.svg" alt="flag">
-                                        +2
-                                    </option>
-                                </select>
                                 <input name="phone" type="tel">
                             </div>
                         </label>
                         <label>
                             Какую фирму хотите открыть?
-                            <select name="" id="">
-                                <option value="">
-                                    Выберите
-                                </option>
-                                <option value="">
-                                    ИП
-                                </option>
-                                <option value="">
-                                    ООО
-                                </option>
-                            </select>
+                            <div  class="fullSelect customSelect">
+                                <select name="" id="">
+                                    <option value="">
+                                        Выберите
+                                    </option>
+                                    <option value="">
+                                        ИП
+                                    </option>
+                                    <option value="">
+                                        ООО
+                                    </option>
+                                </select>
+                            </div>
                         </label>
                         <label>
                             Email
@@ -983,9 +950,9 @@
         </div>
     </div>
         <!-- Library Script -->
-        <script  src="https://code.jquery.com/jquery-3.6.0.min.js"  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="  crossorigin="anonymous"></script>
+        <script src="./assets/lib/jquery-3.6.0.min.js"></script>
         <!-- Swiper Script -->
-        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        <script src="./assets/lib/swiper/swiper-bundle.min.js"></script>
         <!-- Main Script -->  
         <script src="./assets/js/script.js"></script>
 </body>

@@ -25,22 +25,20 @@ const sizeWindow = (screen) => {
 }
 
 // --------- Sliders
-if(sizeWindow(document.body.clientWidth) > 768) { 
+if(sizeWindow(document.body.clientWidth) > 767) { 
     const reviewSlider = new Swiper('.reviewSlider', {
         slidesPerView: 2.3,
         spaceBetween: 30,
     });
 }
-if(sizeWindow(document.body.clientWidth) < 768) { 
-    const partnersSlider = new Swiper('.partnersSlider', {
-        slidesPerView: 2,
-        spaceBetween: 30,
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-    });
-}
+const partnersSlider = new Swiper('.partnersSlider', {
+    slidesPerView: 2,
+    spaceBetween: 30,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+});
 
 
 
@@ -85,18 +83,37 @@ if (popup) {
     closePopup(popupOverlay);
     closePopup(popupClose);
     
+    // const activePopup = (btn, modal) => {
+    //     btnCollection =  document.querySelectorAll(btn);
+    //     for(popupBtn of btnCollection) {
+    //         popupBtn.addEventListener('click', e => {
+    //             e.preventDefault();
+    //             for(var i = 0; i < popup.length; i++) {
+    //                 popup[i].id === modal ? popup[i].classList.add('active') : '';
+    //             }
+    //         })
+    //     }
+    // }
+    
     const activePopup = (btn, modal) => {
         btnCollection =  document.querySelectorAll(btn);
         for(popupBtn of btnCollection) {
-            popupBtn.addEventListener('click', e => {
+            popupBtn.addEventListener('click', e => {                
                 e.preventDefault();
                 for(var i = 0; i < popup.length; i++) {
-                    popup[i].id === modal ? popup[i].classList.add('active') : '';
+                    popup[i].id === modal ? popup[i].classList.add('active') : ''; 
+                }
+                if (e.target.nextElementSibling) {
+                    if (e.target.nextElementSibling.classList.contains('popup')) {
+                        e.target.nextElementSibling.classList.add('active');
+                    }
                 }
             })
         }
     }
-    activePopup('.popupBtnOrder', 'popupOrder');
+    activePopup('.popupBtnOrder', 'popupOrder');    
+    activePopup('.tariffCard .btn', 'popupTariff');
+    activePopup('.btnPopup', 'popupOrder');
 }
 
 // --------- Select

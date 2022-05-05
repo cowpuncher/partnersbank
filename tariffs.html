@@ -8,7 +8,7 @@
         Library style 
     -->
     <!-- Swiper style -->
-    <link  rel="stylesheet"  href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link  rel="stylesheet"  href="./assets/lib/swiper/swiper-bundle.min.css" />
 
     <!-- Main style -->
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -145,7 +145,7 @@
                                 Выбрать самое выгодное расчетно-кассовое <br> обслуживание для ИП или ООО среди множества тарифов
                             </p>
                             <div class="buttons dFlex aic">
-                                <a href="#formSection" class="btn btnPoor bgPurple">
+                                <a href="#tariffsSection" class="btn btnPoor bgPurple">
                                     Выбрать тариф
                                 </a>
                             </div>
@@ -158,7 +158,7 @@
             </div>
         </header>
         <main>  
-            <section class="tariffsSection">
+            <section class="tariffsSection" id="tariffsSection">
                 <div class="container">
                     <h2 class="title">
                         Выберите тариф
@@ -214,6 +214,121 @@
                                         <a href="#" class="btn bgPurple btnPoor">
                                             Открыть счета
                                         </a>
+                                        <div class="popup popupTariff">            
+                                            <button class="popupClose">
+                                                <img src="./assets/img/svg/close.svg" alt="">
+                                            </button>
+                                            <div class="popupOverlay"></div>
+                                            <div class="popupWindow"> 
+                                                <div class="popupTariffInfo">
+                                                    <div class="top dFlex aic">
+                                                        <div class="img">
+                                                            <img src="./assets/img/svg/banks/alfa-bank.svg" alt="">
+                                                        </div>
+                                                        <h3 class="title">
+                                                            Альфа Банк
+                                                        </h3>
+                                                    </div>
+                                                    <span class="label">
+                                                        Тариф
+                                                    </span>
+                                                    <h3>
+                                                        Расчётный счёт «Просто 1%»
+                                                    </h3>
+                                                    <label>
+                                                        Стоимость обслуживания в месяц
+                                                        <div class="input">
+                                                            1% от поступлений до 750 000 ₽
+                                                            <span class="tooltip" data-tooltip="1% от поступлений до 750 000 ₽">
+                                                                <img src="./assets/img/svg/input-info.svg" alt="">
+                                                            </span>
+                                                        </div>
+                                                    </label>
+                                                    <label>
+                                                        Переводы на счета юрлиц и ИП
+                                                        <div class="input">
+                                                            Бесплатно
+                                                            <span class="tooltip" data-tooltip="Бесплатно">
+                                                                <img src="./assets/img/svg/input-info.svg" alt="">
+                                                            </span>
+                                                        </div>
+                                                    </label>
+                                                    <label>
+                                                        Переводы на счета физлиц
+                                                        <div class="input">
+                                                            Бесплатно — до 1,5 млн ₽
+                                                            <span class="tooltip" data-tooltip="Бесплатно — до 1,5 млн ₽">
+                                                                <img src="./assets/img/svg/input-info.svg" alt="">
+                                                            </span>
+                                                        </div>
+                                                    </label>
+                                                    <label>
+                                                        Переводы со счёта ИП на личный счёт
+                                                        <div class="input">
+                                                            Бесплатно —до 6 млн ₽
+                                                            <span class="tooltip" data-tooltip="Бесплатно —до 6 млн ₽">
+                                                                <img src="./assets/img/svg/input-info.svg" alt="">
+                                                            </span>
+                                                        </div>
+                                                    </label>
+                                                    <a href="/blog.html" download="/blog.html" class="downloadTariff">
+                                                        <img src="./assets/img/svg/file-download.svg" alt="">
+                                                        Скачать подробное описание тарифа
+                                                    </a>
+                                                </div>
+                                                <form class="form dFlex fdc aifs">
+                                                    <h3>
+                                                        Заявка на открытие
+                                                    </h3>
+                                                    <div class="wrapper dFlex">
+                                                        <label>
+                                                            Фамилия
+                                                            <input name="surname" type="text">
+                                                        </label>
+                                                        <label>
+                                                            Имя
+                                                            <input name="name" type="text">
+                                                        </label>
+                                                        <label>
+                                                            Отчество
+                                                            <input name="surname" type="text">
+                                                        </label>
+                                                    </div>
+                                                    <label>
+                                                        Контактный телефон
+                                                        <div class="phoneWrap dFlex aic">
+                                                            <input name="phone" type="tel">
+                                                        </div>
+                                                    </label>
+                                                    <label>
+                                                        Какую фирму хотите открыть?
+                                                        <div  class="fullSelect customSelect">
+                                                            <select name="" id="">
+                                                                <option value="">
+                                                                    Выберите
+                                                                </option>
+                                                                <option value="">
+                                                                    ИП
+                                                                </option>
+                                                                <option value="">
+                                                                    ООО
+                                                                </option>
+                                                            </select>
+                                                        </div>
+                                                    </label>
+                                                    <label>
+                                                        Email
+                                                        <input name="email" type="email">
+                                                    </label>
+                                                    <p class="policy">
+                                                        Нажимая кнопку «Отправить», вы соглашаетесь с <a href="#">обработкой персональных данных</a>, <a href="#">пользовательским соглашением</a> и <a href="#">политикой конфиденциальности</a>
+                                                    </p>
+                                                    <button class="btn btnPoor bgOrange">
+                                                        Открыть счет
+                                                    </button>
+                                                </form>
+                                            </div>
+                                        </div>
                                         <a href="#" class="link">
                                             Подробнее
                                         </a>
@@ -238,6 +353,121 @@
                                         <a href="#" class="btn bgPurple btnPoor">
                                             Открыть счета
                                         </a>
+                                        <div class="popup popupTariff">            
+                                            <button class="popupClose">
+                                                <img src="./assets/img/svg/close.svg" alt="">
+                                            </button>
+                                            <div class="popupOverlay"></div>
+                                            <div class="popupWindow"> 
+                                                <div class="popupTariffInfo">
+                                                    <div class="top dFlex aic">
+                                                        <div class="img">
+                                                            <img src="./assets/img/svg/banks/tinkoff-bank.svg" alt="">
+                                                        </div>
+                                                        <h3 class="title">
+                                                            Тинькофф Банк
+                                                        </h3>
+                                                    </div>
+                                                    <span class="label">
+                                                        Тариф
+                                                    </span>
+                                                    <h3>
+                                                        Расчётный счёт «Просто 1%»
+                                                    </h3>
+                                                    <label>
+                                                        Стоимость обслуживания в месяц
+                                                        <div class="input">
+                                                            1% от поступлений до 750 000 ₽
+                                                            <span class="tooltip" data-tooltip="1% от поступлений до 750 000 ₽">
+                                                                <img src="./assets/img/svg/input-info.svg" alt="">
+                                                            </span>
+                                                        </div>
+                                                    </label>
+                                                    <label>
+                                                        Переводы на счета юрлиц и ИП
+                                                        <div class="input">
+                                                            Бесплатно
+                                                            <span class="tooltip" data-tooltip="Бесплатно">
+                                                                <img src="./assets/img/svg/input-info.svg" alt="">
+                                                            </span>
+                                                        </div>
+                                                    </label>
+                                                    <label>
+                                                        Переводы на счета физлиц
+                                                        <div class="input">
+                                                            Бесплатно — до 1,5 млн ₽
+                                                            <span class="tooltip" data-tooltip="Бесплатно — до 1,5 млн ₽">
+                                                                <img src="./assets/img/svg/input-info.svg" alt="">
+                                                            </span>
+                                                        </div>
+                                                    </label>
+                                                    <label>
+                                                        Переводы со счёта ИП на личный счёт
+                                                        <div class="input">
+                                                            Бесплатно —до 6 млн ₽
+                                                            <span class="tooltip" data-tooltip="Бесплатно —до 6 млн ₽">
+                                                                <img src="./assets/img/svg/input-info.svg" alt="">
+                                                            </span>
+                                                        </div>
+                                                    </label>
+                                                    <a href="/blog.html" download="/blog.html" class="downloadTariff">
+                                                        <img src="./assets/img/svg/file-download.svg" alt="">
+                                                        Скачать подробное описание тарифа
+                                                    </a>
+                                                </div>
+                                                <form class="form dFlex fdc aifs">
+                                                    <h3>
+                                                        Заявка на открытие
+                                                    </h3>
+                                                    <div class="wrapper dFlex">
+                                                        <label>
+                                                            Фамилия
+                                                            <input name="surname" type="text">
+                                                        </label>
+                                                        <label>
+                                                            Имя
+                                                            <input name="name" type="text">
+                                                        </label>
+                                                        <label>
+                                                            Отчество
+                                                            <input name="surname" type="text">
+                                                        </label>
+                                                    </div>
+                                                    <label>
+                                                        Контактный телефон
+                                                        <div class="phoneWrap dFlex aic">
+                                                            <input name="phone" type="tel">
+                                                        </div>
+                                                    </label>
+                                                    <label>
+                                                        Какую фирму хотите открыть?
+                                                        <div  class="fullSelect customSelect">
+                                                            <select name="" id="">
+                                                                <option value="">
+                                                                    Выберите
+                                                                </option>
+                                                                <option value="">
+                                                                    ИП
+                                                                </option>
+                                                                <option value="">
+                                                                    ООО
+                                                                </option>
+                                                            </select>
+                                                        </div>
+                                                    </label>
+                                                    <label>
+                                                        Email
+                                                        <input name="email" type="email">
+                                                    </label>
+                                                    <p class="policy">
+                                                        Нажимая кнопку «Отправить», вы соглашаетесь с <a href="#">обработкой персональных данных</a>, <a href="#">пользовательским соглашением</a> и <a href="#">политикой конфиденциальности</a>
+                                                    </p>
+                                                    <button class="btn btnPoor bgOrange">
+                                                        Открыть счет
+                                                    </button>
+                                                </form>
+                                            </div>
+                                        </div>
                                         <a href="#" class="link">
                                             Подробнее
                                         </a>
@@ -1218,32 +1448,24 @@
                         <label>
                             Контактный телефон
                             <div class="phoneWrap dFlex aic">
-                                <select name="" id="">
-                                    <option value="+7">
-                                        <img src="./assets/img/svg/flag.svg" alt="flag">
-                                        +7
-                                    </option>
-                                    <option value="+2">
-                                        <img src="./assets/img/svg/flag.svg" alt="flag">
-                                        +2
-                                    </option>
-                                </select>
                                 <input name="phone" type="tel">
                             </div>
                         </label>
                         <label>
                             Какую фирму хотите открыть?
-                            <select name="" id="">
-                                <option value="">
-                                    Выберите
-                                </option>
-                                <option value="">
-                                    ИП
-                                </option>
-                                <option value="">
-                                    ООО
-                                </option>
-                            </select>
+                            <div  class="fullSelect customSelect">
+                                <select name="" id="">
+                                    <option value="">
+                                        Выберите
+                                    </option>
+                                    <option value="">
+                                        ИП
+                                    </option>
+                                    <option value="">
+                                        ООО
+                                    </option>
+                                </select>
+                            </div>
                         </label>
                         <label>
                             Email
@@ -1261,11 +1483,11 @@
         </div>
     </div>
         <!-- Library Script -->
-        <script  src="https://code.jquery.com/jquery-3.6.0.min.js"  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="  crossorigin="anonymous"></script>
+        <script src="./assets/lib/jquery-3.6.0.min.js"></script>
         <!-- Fancybox Script -->
         <script src="./assets/lib/lightbox/fslightbox.js"></script>
         <!-- Swiper Script -->
-        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        <script src="./assets/lib/swiper/swiper-bundle.min.js"></script>
         <!-- Main Script -->  
         <script src="./assets/js/script.js"></script>
 </body>

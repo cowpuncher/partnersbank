@@ -8,7 +8,7 @@
         Library style 
     -->
     <!-- Swiper style -->
-    <link  rel="stylesheet"  href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link  rel="stylesheet"  href="./assets/lib/swiper/swiper-bundle.min.css" />
 
     <!-- Main style -->
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -398,32 +398,24 @@
                         <label>
                             Контактный телефон
                             <div class="phoneWrap dFlex aic">
-                                <select name="" id="">
-                                    <option value="+7">
-                                        <img src="./assets/img/svg/flag.svg" alt="flag">
-                                        +7
-                                    </option>
-                                    <option value="+2">
-                                        <img src="./assets/img/svg/flag.svg" alt="flag">
-                                        +2
-                                    </option>
-                                </select>
                                 <input name="phone" type="tel">
                             </div>
                         </label>
                         <label>
                             Какую фирму хотите открыть?
-                            <select name="" id="">
-                                <option value="">
-                                    Выберите
-                                </option>
-                                <option value="">
-                                    ИП
-                                </option>
-                                <option value="">
-                                    ООО
-                                </option>
-                            </select>
+                            <div  class="fullSelect customSelect">
+                                <select name="" id="">
+                                    <option value="">
+                                        Выберите
+                                    </option>
+                                    <option value="">
+                                        ИП
+                                    </option>
+                                    <option value="">
+                                        ООО
+                                    </option>
+                                </select>
+                            </div>
                         </label>
                         <label>
                             Email
@@ -441,11 +433,11 @@
         </div>
     </div>
         <!-- Library Script -->
-        <script  src="https://code.jquery.com/jquery-3.6.0.min.js"  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="  crossorigin="anonymous"></script>
+        <script src="./assets/lib/jquery-3.6.0.min.js"></script>
         <!-- Fancybox Script -->
         <script src="./assets/lib/lightbox/fslightbox.js"></script>
         <!-- Swiper Script -->
-        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        <script src="./assets/lib/swiper/swiper-bundle.min.js"></script>
         <!-- Main Script -->  
         <script src="./assets/js/script.js"></script>
 </body>
