@@ -90,9 +90,6 @@ article::before {
        -moz-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-border-radius: 1px solid var(--color-4);
-       -moz-border-radius: 1px solid var(--color-4);
-            border-radius: 1px solid var(--color-4);
     position: absolute;
     left: 40px;
 }
@@ -927,7 +924,7 @@ input {
 }
 
 .popupWindow {
-    overflow: overlay;
+    overflow: scroll;
     height: 80%;
     padding: 50px 100px;
     position: fixed;
@@ -1073,7 +1070,8 @@ input {
 /*SCROLLBAR*/
 
 .scrollMenu::-webkit-scrollbar,
-.scrollLinks::-webkit-scrollbar {
+.scrollLinks::-webkit-scrollbar,
+.tabsWrap::-webkit-scrollbar {
     display: none;
 }
 
