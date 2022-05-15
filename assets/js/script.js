@@ -113,6 +113,7 @@ if (popup) {
     }
     activePopup('.popupBtnOrder', 'popupOrder');    
     activePopup('.tariffCard .btn', 'popupTariff');
+    activePopup('.btnPopup', 'popupOrder');
 }
 
 // --------- Select
@@ -197,7 +198,7 @@ burger.addEventListener('click', function() {
     menu.classList.toggle('active');
 });
 
-
+// ANCHOR (Share button) 
 let shareInput = document.querySelectorAll('.shareRef input');
 let shareBtn = document.querySelectorAll('.shareRef button');
 

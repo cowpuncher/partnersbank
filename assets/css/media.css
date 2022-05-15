@@ -33,7 +33,7 @@
         font-size: 4vw;
     }
     .popupWindow .title {
-        font-size: 3.1vw;
+        font-size: 30px;
     }
     h2 {
         font-size: 30px;
@@ -106,6 +106,10 @@
 }
 /*ANCHOR max-width: 993 */
 @media screen and (max-width: 993px) {
+    .headerFigure {
+        -webkit-clip-path: polygon(50% 0%,61.80% 0.00%,76.22% 0.00%,85.16% 0.00%,100.00% 0.00%,100.00% 27.17%,100.00% 90.63%,95.32% 92.51%,90.20% 94.02%,84.94% 95.21%,79.05% 96.46%,73.04% 97.50%,65.65% 98.75%,51.46% 100%,43.55% 100%,35.44% 99.38%,25.62% 98.75%,16.42% 97.50%,10.09% 95.63%,4.97% 93.56%,0.00% 90.43%,0.00% 26.55%,0.00% 0.00%,14.40% 0.00%,27.15% 0.00%,41.12% 0.00%);
+                clip-path: polygon(50% 0%,61.80% 0.00%,76.22% 0.00%,85.16% 0.00%,100.00% 0.00%,100.00% 27.17%,100.00% 90.63%,95.32% 92.51%,90.20% 94.02%,84.94% 95.21%,79.05% 96.46%,73.04% 97.50%,65.65% 98.75%,51.46% 100%,43.55% 100%,35.44% 99.38%,25.62% 98.75%,16.42% 97.50%,10.09% 95.63%,4.97% 93.56%,0.00% 90.43%,0.00% 26.55%,0.00% 0.00%,14.40% 0.00%,27.15% 0.00%,41.12% 0.00%);
+    }
     /*BURGER*/
     .burger {
         border: 0;
@@ -198,6 +202,7 @@
     .mobileNavSoc a {
         background: #F5F9FF;
         width: 100%;
+        max-width: 160px;
         margin: 0;
         -webkit-border-radius:  12px;
            -moz-border-radius:  12px;
@@ -298,7 +303,7 @@
     }
     
     .tariffCard {
-        max-width: 45%;
+        max-width: 43%;
     }
     .partnerSection {
         padding: 100px 0 0;
@@ -314,6 +319,15 @@
     }
     .headerFigure.bgCold .mainOfferWrap {
         padding: 95px 0 80px;
+    }
+    .footerMenuItem {
+        width: 50%;
+    }
+    .formWrap .img img {
+        max-width: 33vw;
+    }
+    .formSection .form {
+        max-width: 100%;
     }
 }
 
@@ -430,8 +444,12 @@
     .offerSection {
         padding: 40px 0px 73px;
     }
-    .formWrap .img img, .programOffer {
+    .programOffer {
         max-width: 100%;
+    }
+    .formWrap .img img {
+        width: 100%;
+        max-width: 340px;
     }
     .offerSection .offer {
         max-width: 65%;
@@ -503,6 +521,9 @@
     }
     .programWrap .img img {
         width: 100%;
+        max-width: 367px;
+        margin: 0 auto;
+        display: block;
     }
     .programOffer .btn {
         padding: 13px 75px;
@@ -604,13 +625,10 @@
         display: -moz-box;
         display: -ms-flexbox;
         display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
-           -moz-box-orient: vertical;
-           -moz-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        margin: 0 -10px;
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
         -webkit-box-align: center;
         -webkit-align-items: center;
            -moz-box-align: center;
@@ -620,6 +638,8 @@
     .reviewSliderItem {
         padding: 15px 15px 25px 20px;
         margin-bottom: 18px;
+        width: 43.8vw;
+        margin: 0 10px 10px; 
     }
     .reviewSliderItem .more,
     .reviewSliderItem p {
@@ -701,9 +721,6 @@
         width: 100%;
         margin-bottom: 20px;
     }
-    .list li {
-        max-width: 100%;
-    }
     .listSection .btn {
         max-width: 100%;
         margin: 0;
@@ -736,7 +753,7 @@
         -webkit-flex-wrap: nowrap;
             -ms-flex-wrap: nowrap;
                 flex-wrap: nowrap;
-        width: 310%;
+        width: 950px;
     }
     .footerMenuItem {
         width: auto;
@@ -782,7 +799,7 @@
         display: -moz-box;
         display: -ms-flexbox;
         display: flex;
-        width: 260%;
+        width: 826px;
     }
     .scrollLinks {
         overflow: overlay;
@@ -908,13 +925,6 @@
         bottom: 0;
         background: var(--color-5);
     }
-    .tariffCard {
-        max-width: 100%;
-        margin: 0 0 40px;
-    }
-    .tariffsSection .content {
-        margin: 0;
-    }
     .tariffCard .price {
         font-size: 17px;
     }
@@ -946,11 +956,33 @@
     .benefitItem {
         max-width: 42vw;
     }
+    .list .item {
+        padding-bottom: 20px;
+    }
+    .list .item .title {
+        margin-bottom: 45px;
+    }
+    .listSection h3, .listSection h2 {
+        width: 100%;
+    }
 }
 
+@media (min-width: 568px) and (max-width: 680px) {
+    .tariffCard .buttons a {
+        font-size: 11px;
+    }
+}
 
 /*ANCHOR max-width: 568 */
 @media screen and (max-width: 568px) {
+    
+    .tariffCard {
+        max-width: 100%;
+        margin: 0 0 40px;
+    }
+    .tariffsSection .content {
+        margin: 0;
+    }
     .benefitItem {
         max-width: 100%;
         margin-left: 0;
@@ -961,6 +993,16 @@
         width: 100%;
         max-width: 100%;
         margin: 0 0 15px;
+    }
+    
+    .list li {
+        max-width: 100%;
+    }
+    .popupWindow {
+        padding: 25px;
+    }
+    .reviewSliderItem {
+        width: 100%;
     }
 }
 
