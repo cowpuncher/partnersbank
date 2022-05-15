@@ -203,6 +203,8 @@
            -moz-border-radius:  12px;
                 border-radius:  12px;
         padding: 20px;
+        display: flex;
+        flex-direction: column;
     }
     .mobileNavSoc a .img {
         margin: 0 0 10px 0;
@@ -760,15 +762,15 @@
             -ms-flex-align: center;
                 align-items: center;
     }
-    .footerSocialLink {
+    .socialLink {
         margin: 0 23px 0 0;
     }
-    .footerSocialLink .img {
+    .socialLink .img {
         width: 37px;
         height: 37px;
 
     }
-    .footerSocialLink .img.oval {
+    .socialLink .img.oval {
         -webkit-border-radius: 50%;
            -moz-border-radius: 50%;
                 border-radius: 50%;
