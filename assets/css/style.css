@@ -1,4 +1,4 @@
-@import url(../fonts/monserrat/stylesheet.css);
+/* @import url(../fonts/monserrat/stylesheet.css); */
 
 /* ANCHOR Variables */
 
@@ -1218,7 +1218,7 @@ input {
     margin-left: 100px;
 }
 
-.footerMenuItem {
+.footerMenu li {
     width: 43%;
     margin-bottom: 20px;
 }
