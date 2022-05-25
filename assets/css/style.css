@@ -1,5 +1,3 @@
-/* @import url(../fonts/monserrat/stylesheet.css); */
-
 /* ANCHOR Variables */
 
 :root {
@@ -458,7 +456,7 @@ select:-webkit-autofill:focus {
     -webkit-border-radius: var(--border-radius-1);
        -moz-border-radius: var(--border-radius-1);
             border-radius: var(--border-radius-1);
-    margin-top: 70px;
+    margin-top: 40px;
 }
 
 .innerBanner img {
@@ -1248,7 +1246,7 @@ a.footerMenuLink:hover {
     margin: 0 10px;
 }
 
-.footerSocialLink {
+.socialLink {
     margin-bottom: 18px;
     display: -webkit-box;
     display: -webkit-flex;
@@ -1263,7 +1261,7 @@ a.footerMenuLink:hover {
     align-items: center;
 }
 
-.footerSocialLink .img {
+.socialLink .img {
     margin-right: 15px;
     display: -webkit-box;
     display: -webkit-flex;
@@ -1288,13 +1286,13 @@ a.footerMenuLink:hover {
     border-radius: 5px;
 }
 
-.footerSocialLink .img.oval {
+.socialLink .img.oval {
     -webkit-border-radius: var(--border-radius-1);
     -moz-border-radius: var(--border-radius-1);
     border-radius: var(--border-radius-1);
 }
 
-.footerSocialLink img {
+.socialLink img {
     width: 18px;
 }
 
